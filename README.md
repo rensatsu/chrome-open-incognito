@@ -4,7 +4,13 @@
 
 Chrome extension to open current tab or selected link in Incognito Mode.
 
-This extension adds an option to the context menu of the page to open that page or a selected link to open it in the Incognito mode. There are no options, no analytics and no tracking.
+This extension adds an option to the context menu of the page to open that page
+or a selected link to open it in the Incognito mode.
+There are no options, no analytics and no tracking.
+
+If you grant "Allow in incognito" permission, tabs will open in the same
+Incognito window. Without this permission, all tabs will open in
+separate windows.
 
 ## Screenshot
 
