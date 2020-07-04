@@ -1,24 +1,21 @@
 {
-    "description": "Open current tab or selected link in Incognito Mode",
-    "icons": {
-        "128": "img/icon.png",
-        "64": "img/icon.png",
-        "32": "img/icon.png",
-        "20": "img/icon.png",
-        "18": "img/icon.png",
-        "16": "img/icon.png"
-    },
-    "manifest_version": 2,
-    "name": "Open in Incognito",
-    "version": "1.0.1",
-    "permissions": [
-        "contextMenus",
-        "tabs"
-    ],
-    "incognito": "spanning",
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    }
+  "description": "Open current tab or selected link in Incognito Mode",
+  "icons": {
+    "256": "img/icon256.png",
+    "128": "img/icon128.png",
+    "64": "img/icon64.png",
+    "32": "img/icon32.png",
+    "20": "img/icon20.png",
+    "18": "img/icon18.png",
+    "16": "img/icon16.png"
+  },
+  "manifest_version": 2,
+  "name": "Open in Incognito",
+  "version": "1.0.2",
+  "permissions": ["contextMenus"],
+  "incognito": "spanning",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
