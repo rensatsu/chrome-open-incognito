@@ -34,16 +34,18 @@ function clickAction(info) {
   );
 }
 
-chrome.contextMenus.create({
-  id: MENU_ID_PAGE,
-  title: "Open in Incognito",
-  contexts: ["page"],
-});
+chrome.contextMenus.removeAll(() => {
+  chrome.contextMenus.create({
+    id: MENU_ID_PAGE,
+    title: "Open in Incognito",
+    contexts: ["page"],
+  });
 
-chrome.contextMenus.create({
-  id: MENU_ID_LINK,
-  title: "Open Link in Incognito",
-  contexts: ["link"],
+  chrome.contextMenus.create({
+    id: MENU_ID_LINK,
+    title: "Open Link in Incognito",
+    contexts: ["link"],
+  });
 });
 
 chrome.contextMenus.onClicked.addListener(clickAction);
