@@ -1,8 +1,16 @@
 # Open in Incognito
 
+![Logotype](./src/img/icon128.png)
+
 Chrome extension to open current tab or selected link in Incognito Mode.
 
 This extension adds an option to the context menu of the page to open that page or a selected link to open it in the Incognito mode. There are no options, no analytics and no tracking.
+
+## Screenshot
+
+![Screenshot for "Open in Incognito" option](./store/screenshot1.png)
+
+Screenshot for "Open in Incognito" option.
 
 ## License
 
