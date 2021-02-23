@@ -15,6 +15,6 @@
   "permissions": ["contextMenus"],
   "incognito": "spanning",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "sw.js"
   }
 }
