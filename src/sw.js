@@ -19,16 +19,20 @@ function clickAction(info) {
 }
 
 chrome.contextMenus.removeAll(() => {
+  const docPatterns = ["http://*/*", "https://*/*"];
+
   chrome.contextMenus.create({
     id: MENU_ID_PAGE,
     title: "Open in Incognito",
     contexts: ["page"],
+    documentUrlPatterns: docPatterns,
   });
 
   chrome.contextMenus.create({
     id: MENU_ID_LINK,
     title: "Open Link in Incognito",
     contexts: ["link"],
+    documentUrlPatterns: docPatterns,
   });
 });
 
